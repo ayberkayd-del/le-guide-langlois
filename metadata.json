@@ -1,0 +1,6 @@
+{
+  "name": "Le Guide Langlois",
+  "description": "A sophisticated Digital Concierge for Hôtel Langlois, providing curated Parisian guides and an interactive AI assistant.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
