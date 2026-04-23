@@ -101,13 +101,7 @@ export default function App() {
               <div className="absolute top-0 right-0 w-16 h-16 border-t border-r border-[#9E825F]/20" />
               <div className="absolute bottom-0 left-0 w-16 h-16 border-b border-l border-[#9E825F]/20" />
               
-              <div className="flex justify-center mb-6 md:mb-8 text-[#9E825F]">
-                <Icons.Calendar size={48} strokeWidth={1} />
-              </div>
-              <h3 className="text-2xl md:text-3xl font-serif mb-4 md:mb-6 uppercase tracking-tight">
-                {selectedCategory}
-              </h3>
-              <div className="font-serif text-left prose prose-ink prose-lg max-h-[60vh] md:max-h-[70vh] overflow-y-auto mb-8 md:mb-12 scrollbar-thin px-2 md:px-4">
+              <div className="font-serif text-left prose prose-ink prose-lg max-h-[60vh] md:max-h-[70vh] overflow-y-auto mt-8 mb-8 md:mb-12 scrollbar-thin px-2 md:px-4">
                 {PILLAR_CONTENT[selectedCategory] ? (
                   <div className="text-[#1A1A1A]/90">
                     <Markdown
@@ -123,10 +117,24 @@ export default function App() {
                             const cleanLabel = label?.trim() || content;
                             
                             // Navigation Keys
-                            const navigationKeys = ["HISTORY_HERITAGE", "BESPOKE_SERVICES", "THE_ROOMS", "BACK_TO_ABOUT"];
+                            const navigationKeys = [
+                              "HISTORY_HERITAGE", 
+                              "BESPOKE_SERVICES", 
+                              "THE_ROOMS", 
+                              "BACK_TO_ABOUT",
+                              "NEARBY_STATIONS",
+                              "FARES_TICKETS",
+                              "HOW_TO_BUY_TICKETS",
+                              "AIRPORT_TRANSFERS",
+                              "BACK_TO_TRANSPORTATION"
+                            ];
                             
                             if (navigationKeys.includes(cleanKey)) {
-                              const target = cleanKey === "BACK_TO_ABOUT" ? "ABOUT HOTEL" : cleanKey;
+                              const targetMap: Record<string, string> = {
+                                "BACK_TO_ABOUT": "ABOUT HOTEL",
+                                "BACK_TO_TRANSPORTATION": "TRANSPORTATION"
+                              };
+                              const target = targetMap[cleanKey] || cleanKey;
                               return (
                                 <button
                                   onClick={() => handleSubCategoryNavigation(target)}

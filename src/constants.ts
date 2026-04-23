@@ -96,16 +96,41 @@ export const PILLAR_CONTENT: Record<string, string> = {
 &nbsp;
 `,
   'HISTORY_HERITAGE': `
-#### 📜 HISTORY & HERITAGE
-***
-*Step back into 1870, where the foundations of our historic hotel were first laid in the heart of the 9th arrondissement. Every corridor whispers stories of the Belle Époque, preserved through careful conservation of our Art Nouveau architecture.*
+&nbsp;
 
-*   The curated details for this section of Hotel Langlois are currently being prepared to reflect our 1870 heritage perfectly.
-*   Please consult the AI Concierge for immediate general inquiries.
+#### 📜 HISTORY & HERITAGE
+
+*Step back into the foundations of our residence, where the legacy of 1870 meets the golden era of French cinema.*
 
 &nbsp;
 
-[BACK_TO_ABOUT]: ↩️ Back to Hotel Overview
+*   **The Architectural Evolution**  
+    The imposing cut-stone building that houses our hotel was originally constructed in the late 19th century to function as a bank. By 1896, the structure was repurposed into a private hotel known as **L’Hôtel Meublé des Croisés**, marking the start of its long history in Parisian hospitality.
+
+&nbsp;
+
+*   **Reaching New Heights**  
+    Originally only two stories high, the building underwent significant expansions in 1896 and 1905. These additions completed our elegant **six-story structure**, carefully preserving the classic architectural details that define our landmark today.
+
+&nbsp;
+***
+&nbsp;
+
+#### 🎬 CINEMATIC LEGACY
+
+*Our authentic Belle Époque charm has made the hotel a natural sanctuary for the arts.*
+
+&nbsp;
+
+*   **A Backdrop for the Arts**  
+    Over the years, our preserved atmosphere has attracted film directors, photographers, and fashion houses seeking a genuine piece of old Paris.
+
+&nbsp;
+
+*   **The Henri Langlois Tribute**  
+    While filming **The Truth About Charlie**, director Jonathan Demme chose to honor **Henri Langlois**, the iconic founder of the Cinémathèque Française, by naming the hotel after him in the movie. We embraced this meaningful tribute to French cinema and made it our permanent name.
+
+&nbsp;
 `,
   'BESPOKE_SERVICES': `
 #### ✨ BESPOKE SERVICES
@@ -116,8 +141,6 @@ export const PILLAR_CONTENT: Record<string, string> = {
 *   Please consult the AI Concierge for immediate general inquiries.
 
 &nbsp;
-
-[BACK_TO_ABOUT]: ↩️ Back to Hotel Overview
 `,
   'THE_ROOMS': `
 #### 🛌 THE ROOMS
@@ -128,10 +151,24 @@ export const PILLAR_CONTENT: Record<string, string> = {
 *   Please consult the AI Concierge for immediate general inquiries.
 
 &nbsp;
-
-[BACK_TO_ABOUT]: ↩️ Back to Hotel Overview
 `,
   'TRANSPORTATION': `
+&nbsp;
+
+#### 🚉 TRANSPORTATION GUIDE
+
+*Navigate Paris like a local. Choose a category below to explore stations, fares, and transfer details:*
+
+&nbsp;
+
+**[NEARBY_STATIONS]: Nearby Stations**
+**[FARES_TICKETS]: Fares & Tickets**
+**[HOW_TO_BUY_TICKETS]: How to Buy Tickets**
+**[AIRPORT_TRANSFERS]: Airport Transfers**
+
+&nbsp;
+`,
+  'NEARBY_STATIONS': `
 &nbsp;
 
 #### 🚉 NEARBY STATIONS
@@ -154,10 +191,14 @@ export const PILLAR_CONTENT: Record<string, string> = {
     Access to **RER A**, for direct transit to **Disneyland Paris**.
 
 &nbsp;
-***
+
+`,
+  'FARES_TICKETS': `
 &nbsp;
 
 #### 🎫 FARES & TICKETS
+
+&nbsp;
 
 *   **Navigo Easy Card**  
     Costs **€2.00**. A physical card you can load with tickets or day passes.
@@ -181,10 +222,14 @@ export const PILLAR_CONTENT: Record<string, string> = {
     *   Includes airport transfers.
 
 &nbsp;
-***
+
+`,
+  'HOW_TO_BUY_TICKETS': `
 &nbsp;
 
 #### 📱 HOW TO BUY TICKETS
+
+&nbsp;
 
 *   **Île-de-France Mobilités App**  
     Purchase tickets directly via the app on your smartphone.
@@ -197,13 +242,17 @@ export const PILLAR_CONTENT: Record<string, string> = {
 &nbsp;
 
 *   **Station Kiosks**  
-    All nearby stations (Saint-Lazare, Auber, Haussmann) feature multilingual ticket machines that accept international credit cards.
+    All nearby stations feature multilingual ticket machines that accept international credit cards.
 
 &nbsp;
-***
+
+`,
+  'AIRPORT_TRANSFERS': `
 &nbsp;
 
 #### ✈️ AIRPORT TRANSFERS
+
+&nbsp;
 
 **Price**: **14€** per trip (all zones).
 
@@ -223,5 +272,6 @@ Can be recharged on your **Navigo Easy** pass or directly on your **smartphone**
 If you have already purchased a **Paris Visite (Zones 1-5)**, airport transfers are already included at **no extra cost**.
 
 &nbsp;
-`
+
+`,
 };
