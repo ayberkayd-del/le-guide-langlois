@@ -45,8 +45,8 @@ export default function App() {
         {/* Central Interaction Zone */}
         <div className="col-span-1 md:col-span-10 flex flex-col items-center justify-center relative bg-white/10 overflow-hidden min-h-[40vh]">
           {/* Geometric Rings */}
-          <div className="absolute w-64 h-64 border border-[#9E825F]/20 rounded-full" />
-          <div className="absolute w-80 h-80 border border-[#9E825F]/10 rounded-full" />
+          <div className="absolute w-64 h-64 border border-[#9E825F]/20 rounded-full animate-[pulse_8s_ease-in-out_infinite]" />
+          <div className="absolute w-80 h-80 border border-[#9E825F]/10 rounded-full animate-[pulse_12s_ease-in-out_infinite]" />
           
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -55,10 +55,9 @@ export default function App() {
             className="w-48 h-48 rounded-full border border-[#1A1A1A] flex flex-col items-center justify-center p-8 text-center bg-white shadow-2xl z-10 transition-colors hover:border-[#9E825F] group"
           >
             <div className="w-2 h-2 bg-[#9E825F] rounded-full mb-4 group-hover:scale-150 transition-transform" />
-            <h2 className="text-xl tracking-tight font-serif">Ask Anything</h2>
+            <h2 className="text-xl tracking-tight font-serif uppercase">Ask Anything</h2>
+            <p className="text-[9px] tracking-[0.2em] font-sans opacity-40 mt-2 uppercase">Live Guide</p>
           </motion.button>
-          
-          {/* Welcome quote removed */}
         </div>
 
         {/* Right Navigation Rails - Hidden on mobile */}

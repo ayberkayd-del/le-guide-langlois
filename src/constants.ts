@@ -31,7 +31,7 @@ export const PILLARS = [
 ];
 
 export const PLACEHOLDER_MESSAGE = (categoryName: string) => 
-  `*Our curated guide for ${categoryName} is currently being handcrafted to ensure it meets the Hotel Langlois standard of excellence. Please consult the AI Concierge for general assistance in the meantime.*`;
+  `*Our curated guide for ${categoryName} is currently being handcrafted to ensure it meets the Hotel Langlois standard of excellence. Please consult our Live Guide for general assistance in the meantime.*`;
 
 export const KNOWLEDGE_BASE = {
   hotel: {
@@ -135,10 +135,10 @@ export const PILLAR_CONTENT: Record<string, string> = {
   'BESPOKE_SERVICES': `
 #### ✨ BESPOKE SERVICES
 ***
-*At Hotel Langlois, we believe that true luxury lies in the personalization of every guest's stay. From our historic elevator to our attentive concierge service, every detail is designed to ensure a seamless Parisian experience.*
+*At Hotel Langlois, we believe that true luxury lies in the personalization of every guest's stay. From our historic elevator to our attentive guide service, every detail is designed to ensure a seamless Parisian experience.*
 
 *   The curated details for this section of Hotel Langlois are currently being prepared to reflect our 1870 heritage perfectly.
-*   Please consult the AI Concierge for immediate general inquiries.
+*   Please consult our Live Guide for immediate general inquiries.
 
 &nbsp;
 `,
@@ -148,7 +148,7 @@ export const PILLAR_CONTENT: Record<string, string> = {
 *Discover guest rooms where 19th-century authenticity meets modern comfort, each uniquely shaped by our heritage layout. From original fireplaces to soaring ceilings, every room offers a unique vantage point over the streets of Paris.*
 
 *   The curated details for this section of Hotel Langlois are currently being prepared to reflect our 1870 heritage perfectly.
-*   Please consult the AI Concierge for immediate general inquiries.
+*   Please consult our Live Guide for immediate general inquiries.
 
 &nbsp;
 `,

@@ -5,29 +5,34 @@
 
 import { motion } from "motion/react";
 
-export function AudioVisualizer({ isListening, isSpeaking, volume = 0 }: { isListening?: boolean; isSpeaking?: boolean; volume?: number }) {
-  if (!isListening && !isSpeaking) return null;
+interface AudioVisualizerProps {
+  level: number;
+  isModel?: boolean;
+}
+
+export function AudioVisualizer({ level, isModel = false }: AudioVisualizerProps) {
+  // Create 40 bars for a finer resolution
+  const bars = Array.from({ length: 40 });
+  const color = "bg-[#1A1A1A]";
 
   return (
-    <div className="flex items-end justify-center gap-1.5 h-16 px-4">
-      {[...Array(12)].map((_, i) => (
-        <motion.div
-          key={i}
-          className={`w-1.5 rounded-full ${isListening ? 'bg-[#9E825F]' : 'bg-[#1A1A1A]'}`}
-          animate={{
-            height: isListening 
-              ? [8, Math.max(12, volume * 100 * (0.5 + Math.random())), 8]
-              : isSpeaking 
-              ? [4, 16, 8, 20, 4] 
-              : 8
-          }}
-          transition={{
-            duration: 0.15,
-            repeat: i % 2 === 0 ? 0 : Infinity, // Only repeat some for variety if not listening
-            ease: "linear"
-          }}
-        />
-      ))}
+    <div className="flex items-center justify-center gap-0.5 h-24 w-full max-w-lg mx-auto">
+      {bars.map((_, i) => {
+        const randomFactor = 0.4 + Math.random() * 0.6;
+        const scale = Math.max(0.05, level * 4 * randomFactor);
+        
+        return (
+          <motion.div
+            key={i}
+            animate={{ 
+              height: `${scale * 100}%`,
+              opacity: 0.1 + (scale * 0.9)
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 30 }}
+            className={`w-1 rounded-full ${color}`}
+          />
+        );
+      })}
     </div>
   );
 }
